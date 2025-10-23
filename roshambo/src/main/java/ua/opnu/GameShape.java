@@ -4,6 +4,13 @@ public class GameShape {
 
     @Override
     public String toString() {
-        return "Game shape";
+        if (this instanceof Rock) {
+            return "Камінь";
+        } else if (this instanceof Paper) {
+            return "Папір";
+        } else if (this instanceof Scissors) {
+            return "Ножиці";
+        }
+        return "Невідома фігура";
     }
 }
